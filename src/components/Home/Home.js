@@ -11,12 +11,12 @@ const Home = () => {
     return (
         <div style={{ overflow: "hidden" }}>
             <Banner />
-            <MedmeCrm />
+            {/* <MedmeCrm />
             <MedmeSuma />
             <MedmeFoydalanuv />
             <MedmeImg />
             <Medem />
-            <Footer />
+            <Footer /> */}
         </div>
     )
 }
