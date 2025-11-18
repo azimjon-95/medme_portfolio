@@ -45,3 +45,13 @@
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 425px) {
+    .login-form-p {
+        position: relative;
+        top: -52px;
+        left: 2px;
+        color: white;
+        text-align: center;
+    }
+}

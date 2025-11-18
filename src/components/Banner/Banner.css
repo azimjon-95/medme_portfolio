@@ -5,7 +5,6 @@
     font-family: sans-serif;
 }
 
-
 .ContenierBanner {
     width: 100%;
     height: 80vh;
@@ -13,13 +12,11 @@
     display: flex;
 }
 
-
 .BannerMalumot {
     width: 70%;
     height: 100vh;
     background: transparent;
 }
-
 
 .BannerMalumot>h1 {
     padding: 110px 0px 5px 110px;
@@ -27,13 +24,11 @@
     color: white;
 }
 
-
 .BannerMalumot>p {
     padding: 0px 110px;
     font-size: 30px;
     color: white;
 }
-
 
 .BannerInputBtn {
     width: 30%;
@@ -45,14 +40,10 @@
     gap: 18px;
 }
 
-
 .BannerInputBtn>p {
     font-size: 15px;
     color: white;
 }
-
-
-
 
 .BannerMalumoth1 {
     width: 300px;
@@ -64,19 +55,15 @@
     gap: 10px;
 }
 
-
 .BannerMalumoth1>p {
     color: white;
     font-size: 14px;
 }
 
-
 .BannerMalumoth1>h2 {
     color: gold;
     font-size: 26px;
 }
-
-
 
 @media screen and (max-width:1016px) {
     .BannerMalumot>h1 {
@@ -92,8 +79,6 @@
     }
 }
 
-
-
 @media screen and (max-width:847px) {
     .ContenierBanner {
         display: flex;
@@ -102,6 +87,7 @@
         flex-direction: column;
         height: 120vh;
         gap: 80px;
+
     }
 
     .BannerInputBtn {
@@ -126,55 +112,179 @@
     }
 }
 
+/* Optimal Mobile 425px */
+@media screen and (max-width:425px) {
+    .ContenierBanner {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+        gap: 40px;
+    }
 
-
-@media screen and (max-width:350px) {
-    .BannerMalumot>p {
-        text-align: center;
-        font-size: 16px;
+    .BannerMalumot {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 0 20px;
     }
 
     .BannerMalumot>h1 {
-        line-height: 35px;
+        padding: 30px 0px 15px 0px;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
 
+    .BannerMalumot>p {
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .BannerInputBtn {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .BannerMalumoth1 {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        gap: 8px;
+    }
+
+    .BannerMalumoth1>h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .BannerMalumoth1>p {
+        font-size: 13px;
+        line-height: 18px;
     }
 }
 
-@media screen and (max-width:325px) {
-    .BannerInputBtn>input {
-        width: 100px;
+/* Optimal Mobile 375px */
+@media screen and (max-width:375px) {
+    .ContenierBanner {
+        padding: 15px 0;
+        gap: 30px;
     }
 
-    .BannerMalumot>button {
-        width: 220px;
-        height: 40px;
-    }
-
-    .BannerMalumot>p {
-        margin-top: 40px;
+    .BannerMalumot {
+        padding: 0 15px;
     }
 
     .BannerMalumot>h1 {
-        font-size: 18px;
+        padding: 20px 0px 12px 0px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .BannerMalumot>p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .BannerInputBtn {
+        padding: 0 15px;
+        gap: 12px;
+    }
+
+    .BannerMalumoth1 {
+        max-width: 280px;
+    }
+
+    .BannerMalumoth1>h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .BannerMalumoth1>p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+
+/* Optimal Mobile 360px */
+@media screen and (max-width:360px) {
+    .ContenierBanner {
+        padding: 10px 0;
+        gap: 25px;
+    }
+
+    .BannerMalumot {
+        padding: 0 12px;
+    }
+
+    .BannerMalumot>h1 {
+        padding: 15px 0px 10px 0px;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .BannerMalumot>p {
         font-size: 14px;
-    }
-
-    .BannerInputBtn>h1 {
-        font-size: 22px;
-    }
-
-    .ContenierBanner {
-        width: 326px;
+        line-height: 20px;
     }
 
     .BannerInputBtn {
-        margin-top: -40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        padding: 0 12px;
+        gap: 10px;
+    }
+
+    .BannerMalumoth1 {
+        max-width: 260px;
+    }
+
+    .BannerMalumoth1>h2 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .BannerMalumoth1>p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .BannerMalumot>h1 {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .BannerMalumot>p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .ContenierBanner {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .BannerMalumot>h1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .BannerMalumot>p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .BannerMalumoth1>h2 {
+        font-size: 18px;
+    }
+
+    .BannerInputBtn {
+        margin-top: 0;
     }
 }

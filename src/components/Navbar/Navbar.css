@@ -7,7 +7,6 @@
     align-items: center;
 }
 
-
 .Navbar {
     width: 100%;
     height: 80px;
@@ -15,7 +14,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 
 .NavbarMedme {
     width: 200px;
@@ -28,27 +26,17 @@
     margin: 0px 110px;
 }
 
-
-/* .NavbarMedeB {
-    color: gold;
-} */
-
-
 .NavbarMedme>p {
     font-size: 10px;
 }
-
-
 
 .NavbarIcon {
     width: 550px;
     height: 100%;
     background: transparent;
     display: flex;
-    align-items: "center";
+    align-items: center;
 }
-
-
 
 .NavbarManzil {
     width: 250px;
@@ -59,10 +47,6 @@
     padding: 0 10px;
 }
 
-.NavbarManzil>p {}
-
-
-
 .NavIcon {
     width: 200px;
     height: 100%;
@@ -72,8 +56,6 @@
     align-items: end;
     gap: 15px;
 }
-
-
 
 .NavbarInsta {
     width: 40px;
@@ -92,13 +74,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.NavbarInsta a {
     color: #000;
 }
-
-
 
 .NavbarTelgram {
     width: 40px;
@@ -109,11 +86,9 @@
     font-size: 22px;
 }
 
-
 .NavbarTelgram a {
     color: #000;
 }
-
 
 .NavbarYoutobe {
     width: 40px;
@@ -124,13 +99,9 @@
     font-size: 22px;
 }
 
-
-
 .NavbarYoutobe a {
     color: #000;
 }
-
-
 
 .NavUZRS {
     width: 80px;
@@ -143,11 +114,268 @@
     align-items: end;
 }
 
+/* Tablet va kichik ekranlar */
+@media screen and (max-width: 1024px) {
+    .NavbarMedme {
+        margin: 0 50px;
+    }
 
+    .NavbarIcon {
+        width: 450px;
+    }
 
-@media screen and (max-width:325px) {
+    .NavbarManzil {
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ContenierNav {
+        height: auto;
+        padding: 20px 15px;
+    }
 
     .Navbar {
-        display: none;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .NavbarMedme {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .NavbarMedme img {
+        width: 160px;
+    }
+
+    .NavbarIcon {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .NavbarManzil {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .NavIcon {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+}
+
+/* Optimal Mobile 425px */
+@media screen and (max-width: 425px) {
+    .ContenierNav {
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .NavbarMedme {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .NavbarMedme img {
+        width: 150px;
+    }
+
+    .NavbarMedme>p {
+        font-size: 9px;
+        margin-top: 5px;
+    }
+
+    .NavbarIcon {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .NavbarManzil {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .NavbarManzil h5 {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+
+    .NavIcon {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding-bottom: 5px;
+    }
+
+    .NavbarInsta {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        padding: 7px;
+    }
+}
+
+/* Optimal Mobile 375px */
+@media screen and (max-width: 375px) {
+    .ContenierNav {
+        padding: 12px 8px;
+    }
+
+    .Navbar {
+        gap: 12px;
+    }
+
+    .NavbarMedme img {
+        width: 140px;
+    }
+
+    .NavbarMedme>p {
+        font-size: 8px;
+        margin-top: 4px;
+    }
+
+    .NavbarIcon {
+        gap: 10px;
+    }
+
+    .NavbarManzil {
+        font-size: 13px;
+        gap: 4px;
+    }
+
+    .NavbarManzil h5 {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .NavIcon {
+        gap: 10px;
+    }
+
+    .NavbarInsta {
+        width: 33px;
+        height: 33px;
+        font-size: 17px;
+        padding: 6px;
+    }
+}
+
+/* Optimal Mobile 360px */
+@media screen and (max-width: 360px) {
+    .ContenierNav {
+        padding: 10px 8px;
+    }
+
+    .Navbar {
+        gap: 10px;
+    }
+
+    .NavbarMedme img {
+        width: 130px;
+    }
+
+    .NavbarMedme>p {
+        font-size: 8px;
+        margin-top: 3px;
+    }
+
+    .NavbarIcon {
+        gap: 8px;
+    }
+
+    .NavbarManzil {
+        font-size: 12px;
+        gap: 3px;
+    }
+
+    .NavbarManzil h5 {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .NavIcon {
+        gap: 8px;
+    }
+
+    .NavbarInsta {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .ContenierNav {
+        padding: 10px 5px;
+    }
+
+    .Navbar {
+        gap: 8px;
+    }
+
+    .NavbarMedme img {
+        width: 120px;
+    }
+
+    .NavbarMedme>p {
+        font-size: 7px;
+        margin-top: 2px;
+    }
+
+    .NavbarManzil {
+        font-size: 11px;
+    }
+
+    .NavbarManzil h5 {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .NavIcon {
+        gap: 7px;
+    }
+
+    .NavbarInsta {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        padding: 5px;
     }
 }

@@ -5,15 +5,10 @@
     font-family: sans-serif;
 }
 
-
-
 .App {
     opacity: 10px;
     background: rgba(30, 143, 255, 0.072);
 }
-
-
-
 
 .App>img {
     width: 100%;
@@ -22,17 +17,14 @@
     top: 0;
     left: 0;
     z-index: -1;
+    object-fit: cover;
 }
-
-
-
 
 .AppBtn {
     width: 100%;
     height: 55px;
     background: dodgerblue;
     border-radius: 100px;
-    border: none;
     border: none;
     font-size: 20px;
     color: white;
@@ -48,12 +40,81 @@
     }
 
     100% {
-        transform: rotate(100%);
+        transform: rotate(360deg);
     }
 }
 
 @media screen and (max-width:1100px) {
-    .App>img{
-        width: 300px;
+    .App>img {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+/* Optimal Mobile 425px */
+@media screen and (max-width:425px) {
+    .App {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .App>img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .AppBtn {
+        height: 50px;
+        font-size: 18px;
+        border-radius: 50px;
+    }
+}
+
+/* Optimal Mobile 375px */
+@media screen and (max-width:375px) {
+    .App>img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .AppBtn {
+        height: 48px;
+        font-size: 17px;
+    }
+}
+
+/* Optimal Mobile 360px */
+@media screen and (max-width:360px) {
+    .App {
+        min-width: 360px;
+    }
+
+    .App>img {
+        width: 100%;
+        min-width: 360px;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .AppBtn {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .App {
+        min-width: 325px;
+    }
+
+    .App>img {
+        min-width: 325px;
+    }
+
+    .AppBtn {
+        height: 45px;
+        font-size: 15px;
     }
 }
